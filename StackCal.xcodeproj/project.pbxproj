@@ -14,6 +14,9 @@
 		E4C3979A2C21A5030062D9BF /* stack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C397962C21A2490062D9BF /* stack.swift */; };
 		E4C3979C2C21D6E50062D9BF /* StackMachineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C3979B2C21D6E50062D9BF /* StackMachineTests.swift */; };
 		E4C3979E2C21D77E0062D9BF /* stack_machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C3979D2C21D77E0062D9BF /* stack_machine.swift */; };
+		E4C3979F2C22C7230062D9BF /* stack_machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C3979D2C21D77E0062D9BF /* stack_machine.swift */; };
+		E4C397A12C231AD80062D9BF /* errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C397A02C231AD80062D9BF /* errors.swift */; };
+		E4C397A22C231B970062D9BF /* errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C397A02C231AD80062D9BF /* errors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +39,7 @@
 		E4C397962C21A2490062D9BF /* stack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stack.swift; sourceTree = "<group>"; };
 		E4C3979B2C21D6E50062D9BF /* StackMachineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackMachineTests.swift; sourceTree = "<group>"; };
 		E4C3979D2C21D77E0062D9BF /* stack_machine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stack_machine.swift; sourceTree = "<group>"; };
+		E4C397A02C231AD80062D9BF /* errors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = errors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 				E4C397812C219FA80062D9BF /* main.swift */,
 				E4C397962C21A2490062D9BF /* stack.swift */,
 				E4C3979D2C21D77E0062D9BF /* stack_machine.swift */,
+				E4C397A02C231AD80062D9BF /* errors.swift */,
 			);
 			path = StackCal;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 			files = (
 				E4C3979E2C21D77E0062D9BF /* stack_machine.swift in Sources */,
 				E4C397982C21A4E20062D9BF /* StackCalTests.swift in Sources */,
+				E4C397A12C231AD80062D9BF /* errors.swift in Sources */,
 				E4C397972C21A2490062D9BF /* stack.swift in Sources */,
 				E4C397822C219FA80062D9BF /* main.swift in Sources */,
 			);
@@ -193,7 +199,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4C3979F2C22C7230062D9BF /* stack_machine.swift in Sources */,
 				E4C3979A2C21A5030062D9BF /* stack.swift in Sources */,
+				E4C397A22C231B970062D9BF /* errors.swift in Sources */,
 				E4C397912C21A20A0062D9BF /* StackCalTests.swift in Sources */,
 				E4C3979C2C21D6E50062D9BF /* StackMachineTests.swift in Sources */,
 			);

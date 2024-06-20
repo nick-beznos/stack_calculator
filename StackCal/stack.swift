@@ -35,4 +35,8 @@ class Stack<T> {
     func clone() -> Stack {
         return Stack.init(array)
     }
+
+    func size() -> Int {
+        return array.count
+    }
 }

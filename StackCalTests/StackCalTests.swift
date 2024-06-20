@@ -9,8 +9,13 @@ import XCTest
 @testable import StackCal
 
 final class StackCalTests: XCTestCase {
+    var stack = Stack<String>()
+
+    override func setUp() {
+        stack = Stack<String>()
+    }
+
     func testStackPush() {
-        let stack = Stack<String>()
 
         let a = "a"
 
@@ -19,8 +24,6 @@ final class StackCalTests: XCTestCase {
     }
 
     func testStackOrder() {
-        let stack = Stack<String>()
-
         let a = "a"
         let b = "b"
 
@@ -32,8 +35,6 @@ final class StackCalTests: XCTestCase {
     }
 
     func testEmptyStack() {
-        let stack = Stack<String>()
-
         let a = "a"
 
         stack.push(a)
@@ -43,7 +44,6 @@ final class StackCalTests: XCTestCase {
     }
 
     func testPeek() {
-        let stack = Stack<String>()
         let a = "a"
 
         stack.push(a)
@@ -53,7 +53,6 @@ final class StackCalTests: XCTestCase {
     }
 
     func testStackClone() {
-        let stack = Stack<String>()
         let a = "a"
 
         stack.push(a)
@@ -63,5 +62,16 @@ final class StackCalTests: XCTestCase {
         let _ = stack.pop()
 
         XCTAssert(clone.peek() == a)
+    }
+
+    func testStackSize() {
+        XCTAssert(stack.size() == 0)
+        let a = "a"
+        stack.push(a)
+
+        XCTAssert(stack.size() == 1)
+
+        let _ = stack.pop()
+        XCTAssert(stack.size() == 0)
     }
 }
